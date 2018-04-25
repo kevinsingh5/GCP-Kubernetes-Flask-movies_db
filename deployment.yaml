@@ -1,0 +1,30 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: cc-a5-singh5-deployment
+  labels:
+    app: cc-a5-singh5
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: cc-a5-singh5
+  template:
+    metadata:
+      labels:
+        app: cc-a5-singh5
+    spec:
+      containers:
+      - name: assignment5
+        image: gcr.io/cc-a5-singh5/assignment5:v1
+        ports:
+        - containerPort: 5000
+        env:
+          - name: "PASSWORD"
+            value: testpass123!@#
+          - name: "DB"
+            value: testdb
+          - name: "HOST"
+            value: 35.224.240.197
+          - name: "USER"
+            value: root
