@@ -4,5 +4,5 @@ You will use Google Cloud Platform (GCP) and Google Cloud SQL as a relational da
 name: Kevin Singh
 eid: ks37843
 bitbucketid: singh5
-url: <Public URL of your application>
-comments: <Comments, if any>
+url: http://35.224.121.70/
+comments: the Google SQL instance name is instance2, not instance1 as specified in the instructions. I don't think this should matter though.
